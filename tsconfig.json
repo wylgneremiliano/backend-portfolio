@@ -6,12 +6,23 @@
     "allowJs": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src",
+    "rootDir": "./",
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["*"]
-    }
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      
+    },
+    
   },
-  "include": [
-    "src/**/*.ts"
-  ]
 }
